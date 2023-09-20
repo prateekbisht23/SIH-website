@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Croissant+One&family=Josefin+Slab&family=Limelight&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Slab&family=Limelight&display=swap"
       rel="stylesheet"
     />
     <link
@@ -17,278 +17,53 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="input.css" />
   </head>
-
-  <style>
-    p {
-      margin-left: 50px;
-      font-family: "Josefin Slab", serif;
-    }
-    h2 {
-      margin-left: 50px;
-      font-family: "Limelight", cursive;
-    }
-    body {
-      background-color: rgb(49, 49, 49);
-      color: white;
-      font-size: 30px;
-    }
-    input {
-      padding: 15px;
-    }
-    select {
-      padding: 20px;
-    }
-
-    .container_head {
-      padding-left: 120px;
-    }
-    .container_input {
-      height: 500px;
-      width: auto;
-      align-self: center;
-      justify-content: space-between;
-      padding: 20px 70px 20px 50px;
-      margin-left: 30px;
-      font-family: "Josefin Slab", serif;
-      background-color: rgb(83, 82, 82);
-      border-radius: 25px;
-      margin: 0 150px 150px 150px;
-    }
-    .input {
-      border-radius: 12px;
-      width: 180px;
-      height: 8px;
-      background-color: #b9b9b9;
-      margin-top: 8px;
-      font-size: 20px;
-    }
-
-    .home-navbar-interactive {
-      width: 100%;
-      height: 110px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: #ffffffe7;
-    }
-    .nav-button {
-      height: 50px;
-      width: 85px;
-      margin: 18px;
-      font-size: 20px;
-      font-weight: 525;
-      border: none;
-      border-radius: 22px;
-      background-color: transparent;
-      transition: transform 0.3s;
-    }
-    .nav-button:hover {
-      transform: scale(1.03);
-      transition: 0.4s;
-      background-color: #000000;
-      color: #fff;
-    }
-    a:link {
-      color: #000000;
-      text-decoration: none;
-      background-color: transparent;
-    }
-    a:hover {
-      color: #000000;
-      text-decoration: none;
-    }
-    a:visited {
-      color: #000000;
-      text-decoration: none;
-    }
-    .home-container01 {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      justify-content: center;
-    }
-    .home-links {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 0 25px 0 25px;
-    }
-    .main_cont2 {
-      display: flex;
-      flex-direction: column;
-    }
-    .input_form {
-      display: inline-block;
-    }
-    .container-01 {
-      display: inline-block;
-      margin: 40px;
-    }
-    select {
-      color: #faf8f8;
-    }
-    input,
-    label {
-      display: block;
-    }
-    label {
-      margin-left: 8px;
-    }
-    #caste {
-      margin-left: 70px;
-    }
-    .icon_main:hover {
-      font-size: 25px;
-      color: #333232;
-    }
-    .home_button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 29px;
-      height: 60px;
-      width: 60px;
-      justify-self: flex-start;
-      border: none;
-      background-color: transparent;
-      border-radius: 150px;
-    }
-  </style>
   <body>
-    <div class="main_container">
-      <div class="nav_bar">
-        <header class="home-navbar-interactive">
-          <nav class="home-links">
-            <div class="nav_icon">
-              <span class="home_button">
-                <a href="home.html" target="_top"
-                  ><div class="icon_main">
-                    <i class="fa fa-house-chimney"></i></div
-                ></a>
-              </span>
-            </div>
-            <div class="nav_text">
-              <span class="home-text">
-                <a href="#"><button class="nav-button">About</button></a>
-              </span>
-              <span class="home-text">
-                <a href="#"><button class="nav-button">Team</button></a>
-              </span>
-              <span class="home-text">
-                <a href="#"><button class="nav-button">Contact</button></a>
-              </span>
-            </div>
-          </nav>
-        </header>
-      </div>
-
-      <div class="main_cont2">
-        <div class="container_head">
-          <h2>Enter Your Details</h2>
-          <p>
-            Enter the following details carfefully.
-            <strong>All fields are compulsory.</strong>
-          </p>
+    <div>
+      <nav class="nav-bar">
+        <div class="nav-icon-div">
+          <a class="nav-icon" href="home.html">
+            <i class="fa fa-house-chimney"></i>
+          </a>
         </div>
-        <br />
-
-        <div class="container_input">
-          <form action="Input-details" class="input_form">
-            <div class="container-02">
-              <div class="container-01">
-                <label for="name">Name</label>
-                <input type="text" placeholder="Name" required class="input" />
-              </div>
-
-              <div class="container-01">
-                <label for="Email">Email</label>
-                <input
-                  type="email"
-                  placeholder="Email"
-                  required
-                  class="input"
-                />
-              </div>
-            </div>
-            <div class="container-03">
-              <div class="container-01">
-                <label for="age">Age</label>
-                <input type="number" min="10" max="18" required class="input" />
-              </div>
-
-              <div class="container-01">
-                <label for="Gender">Gender</label>
-                <select id="Gender" name="Gender" required class="input">
-                  <option value="Select">Select</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="container-04">
-              <div class="container-01">
-                <label for="State">State</label>
-                <select id="State" name="state" required class="input">
-                  <option value="select">Select</option>
-                  <option value="AN">Andaman and Nicobar Islands</option>
-                  <option value="AP">Andhra Pradesh</option>
-                  <option value="AR">Arunachal Pradesh</option>
-                  <option value="AS">Assam</option>
-                  <option value="BR">Bihar</option>
-                  <option value="CH">Chandigarh</option>
-                  <option value="CT">Chhattisgarh</option>
-                  <option value="DN">Dadra and Nagar Haveli</option>
-                  <option value="DD">Daman and Diu</option>
-                  <option value="DL">Delhi</option>
-                  <option value="GA">Goa</option>
-                  <option value="GJ">Gujarat</option>
-                  <option value="HR">Haryana</option>
-                  <option value="HP">Himachal Pradesh</option>
-                  <option value="JK">Jammu and Kashmir</option>
-                  <option value="JH">Jharkhand</option>
-                  <option value="KA">Karnataka</option>
-                  <option value="KL">Kerala</option>
-                  <option value="LA">Ladakh</option>
-                  <option value="LD">Lakshadweep</option>
-                  <option value="MP">Madhya Pradesh</option>
-                  <option value="MH">Maharashtra</option>
-                  <option value="MN">Manipur</option>
-                  <option value="ML">Meghalaya</option>
-                  <option value="MZ">Mizoram</option>
-                  <option value="NL">Nagaland</option>
-                  <option value="OR">Odisha</option>
-                  <option value="PY">Puducherry</option>
-                  <option value="PB">Punjab</option>
-                  <option value="RJ">Rajasthan</option>
-                  <option value="SK">Sikkim</option>
-                  <option value="TN">Tamil Nadu</option>
-                  <option value="TG">Telangana</option>
-                  <option value="TR">Tripura</option>
-                  <option value="UP">Uttar Pradesh</option>
-                  <option value="UT">Uttarakhand</option>
-                  <option value="WB">West Bengal</option>
-                </select>
-              </div>
-
-              <div class="container-01" id="caste">
-                <label for="Caste">Caste</label>
-                <select id="Caste" name="Caste" required class="input">
-                  <option value="Select-caste">Select</option>
-                  <option value="Sc">General</option>
-                  <option value="St">OBC</option>
-                  <option value="OBC">Scheduled Caste</option>
-                  <option value="General">Scheduled Tribe</option>
-                </select>
-              </div>
-            </div>
-          </form>
+        <div class="nav-links-div">
+          <a class="nav-links" id="about" href="#">About</a>
+          <a class="nav-links" id="team" href="#">Team</a>
+          <a class="nav-links" id="contact" href="#">Contact</a>
+        </div>
+        <a class="nav-login" id="contact" href="login.html">
+          <div class="nav-login-div">Login</div>
+        </a>
+      </nav>
+      <div class="flex-container">
+        <div class="container1">
+          <div class="content">
+            <p>Enter files here in excel file format.</p>
+          </div>
+          <div class="input">
+            <input type="file" accept=".xls, .xlsx" class="input_file" />
+          </div>
         </div>
       </div>
+      <footer>
+        <div class="contact-links">
+          <div class="contact">
+            <a href="#" class="footer-icon">
+              <i class="fa-brands fa-instagram" style="color: #000000"></i>
+            </a>
+            <a href="#" class="footer-icon">
+              <i class="fa-solid fa-envelope" style="color: #000000"></i>
+            </a>
+            <a href="#" class="footer-icon">
+              <i class="fa-brands fa-x-twitter" style="color: #000000"></i>
+            </a>
+          </div>
+          <div class="copyright">
+            <span> &copy; 2023 DropotInsight </span>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
