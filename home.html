@@ -24,38 +24,38 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div>
-      <div class="home-container">
-        <header class="home-navbar-interactive">
-          <div class="home-desktop-menu">
-            <nav class="home-links">
-                <div class="nav_icon">
-                  <span class="home_button">
-                    <a href="home.html" target="_parent"><div class="icon_main">
-                      <i class="fa fa-house-chimney"></i>
-                    </div></a>
-                  </span>
-                </div>
-                
-                <div class="nav_content">
-                  <span class="home-text">
-                    <a href="#"><button class="nav-button">About</button></a>
-                  </span>
-                  <span class="home-text">
-                    <a href="#"><button class="nav-button">Team</button></a>
-                  </span>
-                  <span class="home-text">
-                    <a href="#"><button class="nav-button">Contact</button></a>
-                  </span>
-                </div>
-            </nav>
+      <header>
+        <nav class="nav-bar">
+          <div class="nav-icon-div">
+            <a class="nav-icon">
+              <i class="fa fa-house-chimney"></i>
+            </a>
           </div>
-        </header>
+          <div class="nav-links-div">
+            <a class="nav-links" id="about" href="Input-details.html"
+              >Add Data</a
+            >
+            <a class="nav-links" id="team" href="data.html">Check Data</a>
+            <a class="nav-links" id="contact">Lorem</a>
+          </div>
+          <div class="nav-login-div">
+            <a class="nav-login" id="contact" href="login.html">Login</a>
+          </div>
+        </nav>
+      </header>
+      <div class="home-container">
         <div class="home-main">
           <div class="home-head">
-            <span class="home-heading">Dropout Insight</span>
+            <span class="home-heading"><h1>Dropout Insight</h1></span>
           </div>
           <div class="home-part1">
             <span class="home-text09">
@@ -88,15 +88,15 @@
           </div>
           <div class="home-mid">
             <div class="home-img1">
-              <a href="#">
+              <a href="data.html">
                 <span class="home-text-head">Categorized</span>
-                <br>
-                <br>
+                <br />
+                <br />
                 <span class="home-text22">
                   Data stored by age, gender, caste, religion and much more...
                 </span>
-                <br>
-                <br>
+                <br />
+                <br />
                 <img
                   alt
                   src="https://framerusercontent.com/images/KIXEV730x9a8gBcSfM1MlVPNn4.jpg?scale-down-to=512"
@@ -106,9 +106,9 @@
                     https://framerusercontent.com/images/KIXEV730x9a8gBcSfM1MlVPNn4.jpg?scale-down-to=1024 1024w,
                     https://framerusercontent.com/images/KIXEV730x9a8gBcSfM1MlVPNn4.jpg                    1200w
                   "
-                loading="lazy"
-                class="home-image"
-              />
+                  loading="lazy"
+                  class="home-image"
+                />
               </a>
             </div>
             <div class="home-img2">
@@ -162,66 +162,74 @@
               </span>
             </div>
             <div class="home-container09">
-              <a href="Input-details.html" target="_blank">
-                <button type="button" class="home-button1 button">
+              <a href="Input-details.html">
+                <button type="button" class="home-button1 button" id="unq">
                   Contribute Insights
                 </button>
               </a>
-              
-              <a href="#">
+
+              <a href="data.html">
                 <button type="button" class="home-button button">
                   Explore Data
                 </button>
               </a>
-              
             </div>
-          </div>
-          <div class="home-img3">
-            <img
-              src="img.png"
-              alt="graphics"
-              width="850px"
-              class="home-imgage3"
-            />
-          </div>
-          <div class="home-para3">
-            <span>
-              <span class="home-text33">Common Queries</span>
-              <br />
-            </span>
-            <div class="home-container10">
-              <div class="home-container11">
-                <span class="home-text35">How is data collected?</span>
-                <span class="home-text36">
-                  Data is collected from a variety of public and private sources
-                  including state departments of education, academic institution
-                  reports, and national surveys.
-                </span>
-              </div>
-              <div class="home-container12">
-                <span>
-                  <span class="home-text35">Can I trust the data?</span>
-                  <br />
-                </span>
-                <span class="home-text36">
-                  We continually update and verify the data to ensure accuracy.
-                  While no data is perfect, we strive to provide the most
-                  reliable information possible.
-                </span>
-              </div>
-              <div class="home-container13">
-                <span class="home-text35" color: rgb(53, 53, 53);>How can I help?</span>
-                <span class="home-text36" color: rgb(53, 53, 53);>
-                  Spread awareness about the issue, and collaborate with
-                  educators, policymakers, and institutions to develop effective
-                  dropout prevention strategies.
-                </span>o
-              </div>
-            </div>
-            <div .></div>
           </div>
         </div>
       </div>
+      <footer class="footer">
+        <div class="home-para3">
+          <span>
+            <span class="home-text33">Common Queries</span>
+            <br />
+          </span>
+          <div class="home-container10">
+            <div class="home-container11">
+              <span class="home-text35">How is data collected?</span>
+              <span class="home-text36">
+                Data is collected from a variety of public and private sources
+                including state departments of education, academic institution
+                reports, and national surveys.
+              </span>
+            </div>
+            <div class="home-container12">
+              <span>
+                <span class="home-text35">Can I trust the data?</span>
+                <br />
+              </span>
+              <span class="home-text36">
+                We continually update and verify the data to ensure accuracy.
+                While no data is perfect, we strive to provide the most reliable
+                information possible.
+              </span>
+            </div>
+            <div class="home-container13">
+              <span class="home-text35">How can I help?</span>
+              <span class="home-text36">
+                Spread awareness about the issue, and collaborate with
+                educators, policymakers, and institutions to develop effective
+                dropout prevention strategies.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-links">
+          <div class="contact">
+            <a href="#" class="footer-icon">
+              <i class="fa-brands fa-instagram" style="color: #000000"></i>
+            </a>
+            <a href="#" class="footer-icon">
+              <i class="fa-solid fa-envelope" style="color: #000000"></i>
+            </a>
+            <a href="#" class="footer-icon">
+              <i class="fa-brands fa-x-twitter" style="color: #000000"></i>
+            </a>
+          </div>
+          <div class="copyright">
+            <span> &copy; 2023 DropotInsight </span>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
